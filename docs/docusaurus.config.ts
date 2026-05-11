@@ -15,7 +15,7 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://fabbyyyy.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/telegram-agent-ui-phase3/',
@@ -23,7 +23,7 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'OracleBot', // Usually your GitHub org/user name.
+  organizationName: 'fabbyyyy', // Usually your GitHub org/user name.
   projectName: 'telegram-agent-ui-phase3', // Usually your repo name.
 
   onBrokenLinks: 'ignore',
@@ -76,7 +76,7 @@ const config: Config = {
           label: 'Documentación',
         },
         {
-          href: 'https://github.com/oraclebot/telegram-agent-ui-phase3',
+          href: 'https://github.com/fabbyyyy/telegram-agent-ui-phase3',
           label: 'GitHub',
           position: 'right',
         },
