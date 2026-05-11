@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agent UI Phase 3</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main class="layout">
+    <section class="panel">
+      <div class="panel-header">
+        <h1>Gestor de Tareas</h1>
+        <p>UI web del mismo sistema que usa el bot de Telegram.</p>
+      </div>
+
+      <form id="task-form" class="task-form">
+        <input id="title" type="text" placeholder="Titulo de la tarea" required>
+        <input id="assignee" type="text" placeholder="Responsable">
+        <input id="storyPoints" type="number" min="1" placeholder="Story points">
+        <input id="sprintName" type="text" placeholder="Sprint">
+        <button type="submit">Crear tarea</button>
+      </form>
+
+      <div class="task-toolbar">
+        <button id="refresh-tasks" type="button">Actualizar lista</button>
+      </div>
+
+      <div id="task-list" class="task-list"></div>
+    </section>
+
+    <section class="panel chat-panel">
+      <div class="panel-header">
+        <h2>Asistente</h2>
+        <p>Este chat usa el mismo `AgentOrchestrator` que Telegram.</p>
+      </div>
+
+      <div id="chat-messages" class="chat-messages"></div>
+
+      <form id="chat-form" class="chat-form">
+        <input id="chat-input" type="text" placeholder="Pregunta por tareas, sprint o equipo" required>
+        <button type="submit">Enviar</button>
+      </form>
+
+      <div class="chat-hints">
+        <span>Ejemplos:</span>
+        <button class="hint" data-message="que tareas tiene ana">que tareas tiene ana</button>
+        <button class="hint" data-message="como va el sprint actual">como va el sprint actual</button>
+        <button class="hint" data-message="quien tiene mas carga">quien tiene mas carga</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>
+
